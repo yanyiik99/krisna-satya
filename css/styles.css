@@ -1,0 +1,429 @@
+:root {
+  --bgNav: #2d4059;
+}
+
+body {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.wraping {
+  background-color: #323232;
+}
+
+.navbar {
+  background-color: #2d4059;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  user-select: none;
+  z-index: 999;
+}
+
+.navbar-gallery {
+  background-color: transparent;
+}
+
+.nav-item a {
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(93deg, rgba(255, 255, 255, 1) 15%, rgba(84, 129, 188, 1) 100%);
+  height: 3px;
+  width: 0%;
+  left: 10%;
+  bottom: 0px;
+}
+
+.nav-item a:hover::after {
+  width: 80%;
+  transition: 1s ease-in-out;
+}
+
+/* Banner */
+
+.left-side h1 {
+  color: #e3763e;
+}
+
+.right-side .img-header {
+  z-index: 2;
+  width: 200px;
+  top: -29px !important;
+}
+
+.right-side .head-bg-circle {
+  width: 90%;
+  z-index: 1;
+}
+
+.right-side .head-mie {
+  z-index: 2;
+  width: 80%;
+  top: 265px;
+  filter: drop-shadow(0px 3px 5px rgba(0 0 0 0.8));
+}
+
+.right-side .x1 {
+  z-index: 2;
+  width: 50px;
+  top: 170px;
+  left: 0px;
+  transform: rotate(30deg);
+  animation: Xrotate 10s infinite;
+}
+
+@keyframes Xrotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.right-side .x2 {
+  width: 50px;
+  top: 30px;
+  right: 10px;
+  z-index: 0;
+}
+
+.mobile-head h1 {
+  color: #e3763e;
+}
+
+.head-line {
+  border: 2px solid rgb(255, 255, 255);
+  width: 50%;
+}
+
+.bi-instagram,
+.bi-facebook {
+  color: white;
+  font-size: 40px;
+}
+
+.bi-youtube {
+  color: white;
+  font-size: 48px;
+}
+
+.btn-contact {
+  background-color: #e3763e;
+  color: white;
+}
+
+/* End Banner */
+
+/* Contect Section */
+.content-wraping {
+  background-color: #282828;
+  color: #d9d9d9;
+}
+
+.content-wraping h2 {
+  font-size: 48px;
+  text-shadow: 4px 10px 4px rgba(0, 0, 0, 0.3);
+}
+
+.article-odd p,
+.article-even p {
+  font-size: 12px;
+}
+
+.more {
+  color: #d9d9d9;
+}
+
+
+.more:hover {
+  color: #b9b9b9;
+}
+
+.bi-arrow-right {
+  position: relative;
+  left: 10px;
+  font-size: 25px;
+}
+
+.wave2 {
+  z-index: 4;
+}
+
+.top-footer {
+  position: relative;
+}
+
+.top-footer .experience {
+  position: absolute;
+  top: 20%;
+}
+
+.top-footer h6 {
+  position: relative;
+  top: -2px;
+}
+
+.wave3 {
+  position: absolute;
+  top: 75%;
+}
+
+.copyright{
+  font-size: 8px !important;
+}
+
+/* GALLERY */
+
+nav .navGallery ul {
+  background-color: #2d4059;
+}
+
+.wraping .sorotan {
+  font-size: 56px;
+  color: #b9b9b9;
+  text-shadow: 4px 6px 4px #00000040;
+  margin-bottom: 30px;
+}
+
+.banner-gallery {
+  background-image: url(/img/gallery/header-gallery.jpg);
+  max-width: 100% !important;
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-gallery h1 {
+  font-size: 40px;
+  background: -webkit-linear-gradient(-90deg, #e3763e 0%, rgba(227, 118, 62, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.img-sorotan {
+  color: #d9d9d9;
+}
+
+.gallery-content {
+  padding-bottom: 100px;
+}
+
+.gallery-wraping {
+  background-color: #282828;
+}
+
+.gallery-content .gallery-title {
+  font-size: 56px;
+  color: #d9d9d9;
+  text-shadow: 4px 6px 4px #00000040;
+}
+
+.gallery-footer {
+  top: -100px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/gallery/wave-footer.svg");
+}
+
+.gallery-footer h6 {
+  padding-top: 100px;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+/* Responsive Media Query Min Width*/
+
+/* Mobile M */
+@media screen and (min-width: 321px) {
+  .right-side .img-header {
+    width: 240px;
+    top: -35px !important;
+  }
+  .right-side .head-mie {
+    top: 315px;
+  }
+
+  .right-side .x2 {
+    width: 50px;
+    right: 24px;
+  }
+
+  /* Gallery */
+  .gallery-footer h6 {
+    padding-top: 90px;
+    padding-bottom: 15px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile L */
+@media screen and (min-width: 376px) {
+  .right-side .img-header {
+    width: 260px;
+    top: -23px !important;
+  }
+  .right-side .head-mie {
+    top: 357px;
+  }
+
+  .right-side .x1 {
+    top: 200px;
+    left: 30px;
+  }
+
+  .right-side .x2 {
+    right: 39px;
+  }
+
+  /* Gallery */
+  .gallery-footer {
+    top: -110px;
+  }
+  .gallery-footer h6 {
+    padding-top: 100px;
+    padding-bottom: 15px;
+    font-size: 12px;
+  }
+}
+
+/* Tablet  */
+@media screen and (min-width: 576px) {
+  .right-side .img-header {
+    width: 200px;
+    top: -29px !important;
+    left: 65px;
+  }
+
+  .right-side .head-mie {
+    top: 263px;
+  }
+
+  .right-side .x2 {
+    right: -10px;
+  }
+
+  .wraping .sorotan {
+    font-size: 64px;
+    color: #b9b9b9;
+    text-shadow: 4px 6px 4px #00000040;
+  }
+
+  .article-odd p,
+  .article-even p {
+    font-size: 16px;
+  }
+
+  /* Gallery.html */
+  .gallery-content {
+    padding-bottom: 200px;
+  }
+
+  .banner-gallery h1 {
+    font-size: 80px;
+  }
+
+  .gallery-footer {
+    top: -180px;
+  }
+  .gallery-footer h6 {
+    padding-top: 150px;
+    padding-bottom: 35px;
+    font-size: 12px;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 769px) {
+  .right-side .img-header {
+    width: 65%;
+    top: -29px !important;
+    left: 105px;
+  }
+
+  .right-side .head-mie {
+    width: 90%;
+    top: 413px;
+  }
+
+  .bi-arrow-right {
+    position: relative;
+    left: 10px;
+    font-size: 35px;
+  }
+
+  .more .bi-arrow-right {
+    animation: arrow-right-animation 3s ease-in-out infinite ;
+  }
+  
+  @keyframes arrow-right-animation{
+    0% {
+      transform: translateY(0px);
+    }
+    25% {
+      transform: translateY(-4px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    75% {
+      transform: translateY(3px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  /* gallery */
+  .banner-gallery {
+    min-height: 500px;
+  }
+
+  .banner-gallery h1 {
+    font-size: 112px;
+  }
+
+  .gallery-content {
+    padding-bottom: 200px;
+  }
+
+  .gallery-footer {
+    top: -220px;
+  }
+  .gallery-footer h6 {
+    padding-top: 180px;
+    padding-bottom: 65px;
+    font-size: 16px;
+  }
+}
+
+/* Laptop L */
+@media screen and (min-width: 1025px) {
+  .right-side .head-mie {
+    width: 90%;
+    top: 433px;
+  }
+
+  /* Gallery */
+
+  .gallery-footer {
+    top: -280px;
+  }
+  .gallery-footer h6 {
+    padding-top: 180px;
+    padding-bottom: 105px;
+    font-size: 20px;
+  }
+}
