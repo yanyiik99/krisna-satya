@@ -280,6 +280,30 @@ nav .navGallery ul {
   transform: scale(0.99);
 }
 
+/* Main About */
+.main-about {
+  font-family: "Lobster", cursive;
+}
+
+.bottom-bawah {
+  padding-bottom: 100px !important;
+}
+
+/* About Footer */
+.about-footer {
+  top: -100px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/about/wave-about.svg");
+}
+.about-footer h6 {
+  padding-top: 80px;
+  padding-bottom: 4px;
+  font-size: 12px;
+}
+
 /* Responsive Media Query Min Width*/
 
 /* Mobile M */
@@ -339,6 +363,17 @@ nav .navGallery ul {
     padding-bottom: 35px;
     font-size: 12px;
   }
+
+  /* About.html */
+  .bottom-bawah {
+    padding-bottom: 150px !important;
+  }
+
+  .about-footer h6 {
+    padding-top: 100px;
+    padding-bottom: 4px;
+    font-size: 12px;
+  }
 }
 
 /* Laptop */
@@ -390,6 +425,20 @@ nav .navGallery ul {
   .gallery-footer h6 {
     padding-top: 180px;
     padding-bottom: 65px;
+    font-size: 16px;
+  }
+
+  /* About.html */
+  .about-footer {
+    top: -200px;
+  }
+  .bottom-bawah {
+    padding-bottom: 280px !important;
+  }
+
+  .about-footer h6 {
+    padding-top: 150px;
+    padding-bottom: 10px;
     font-size: 16px;
   }
 }
