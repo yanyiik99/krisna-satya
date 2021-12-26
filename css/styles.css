@@ -1,5 +1,7 @@
-:root {
-  --bgNav: #2d4059;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -79,23 +81,24 @@ body {
   width: 50%;
 }
 
-.bi-instagram,
-.bi-facebook {
+.instagram,
+.facebook {
   color: white;
   font-size: 40px;
+  transition: 1s;
 }
 
-.bi-youtube {
+.youtube {
   color: white;
   font-size: 48px;
+  transition: 1s;
 }
 
 .instagram:hover,
 .facebook:hover,
 .youtube:hover {
-  transition: 0.3s ease-in;
-  transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1) scaleZ(1.2);
+  color: white;
 }
 
 .btn-contact {
@@ -231,6 +234,7 @@ nav .navGallery ul {
   padding-top: 100px;
   padding-bottom: 0px;
   font-size: 12px;
+  line-height: 1.8;
 }
 
 /* About  */
@@ -299,9 +303,10 @@ nav .navGallery ul {
   background-image: url("../img/about/wave-about.svg");
 }
 .about-footer h6 {
-  padding-top: 80px;
-  padding-bottom: 4px;
-  font-size: 12px;
+  padding-top: 90px;
+  padding-bottom: 3px;
+  font-size: 10px;
+  line-height: 1.8;
 }
 
 /* Responsive Media Query Min Width*/
@@ -424,13 +429,13 @@ nav .navGallery ul {
   }
   .gallery-footer h6 {
     padding-top: 180px;
-    padding-bottom: 65px;
-    font-size: 16px;
+    padding-bottom: 50px;
+    font-size: 16px !important;
   }
 
   /* About.html */
   .about-footer {
-    top: -200px;
+    top: -190px;
   }
   .bottom-bawah {
     padding-bottom: 280px !important;
@@ -452,7 +457,7 @@ nav .navGallery ul {
   }
   .gallery-footer h6 {
     padding-top: 180px;
-    padding-bottom: 105px;
-    font-size: 20px;
+    padding-bottom: 60px;
+    font-size: 16px !important;
   }
 }
