@@ -248,6 +248,9 @@ nav .navGallery ul {
 /* right side */
 #circle-blur {
   animation: berputar-besar 5s linear infinite alternate-reverse;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -265,6 +268,11 @@ nav .navGallery ul {
 
 #tari {
   animation: geser 2s linear infinite alternate-reverse;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 @keyframes geser {
@@ -278,10 +286,20 @@ nav .navGallery ul {
 
 #nama-about {
   transition: 0.3s ease-in-out;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 #nama-about:hover {
   transform: scale(0.99);
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 /* Main About */
